@@ -1,5 +1,5 @@
 variable "cloudwatch_log_groups" {
-  description = "Create desired CloudWatch Log Groups here :)"
+  description = "This example shows how to create CloudWatch Log groups dynamically"
   type        = any
   default = {
     one = {

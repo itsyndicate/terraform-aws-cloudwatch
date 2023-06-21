@@ -1,12 +1,12 @@
 output "cloudwatch_log_group_names" {
-  description = "Names of Cloudwatch log groups"
+  description = "Names of CloudWatch Log groups"
   value = [
     for x in aws_cloudwatch_log_group.this : x.name
   ]
 }
 
 output "cloudwatch_log_group_arns" {
-  description = "ARN of Cloudwatch log group"
+  description = "ARNs of CloudWatch Log groups"
   value = [
     for x in aws_cloudwatch_log_group.this : x.arn
   ]
